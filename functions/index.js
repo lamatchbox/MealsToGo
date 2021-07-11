@@ -16,7 +16,7 @@ exports.geocode = functions.https.onRequest((request, response) => {
   // const { city } = url.parse(request.url, true).query;
   //   const locationMock = locationsMock[city.toLowerCase()];
   //   return response.send(JSON.stringify(city));
-  //   response.json(locationMock);
+    // response.json(locationMock);
   
 });
 

@@ -11,10 +11,11 @@ const addGoogleImage = (restaurant) => {
     return restaurant;
   }
   restaurant.photos = [
-    `https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=${ref}&key=${
+    `https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=${ref}&key="AIzaSyDL1XisRIMjgHtU8tY76Q-Cop5O8_uDdd0"`,
+    // `https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=${ref}&key=${
       // functions.config().google.key
-      "AIzaSyDL1XisRIMjgHtU8tY76Q-Cop5O8_uDdd0"
-    }`,
+    // "AIzaSyDL1XisRIMjgHtU8tY76Q-Cop5O8_uDdd0"
+    // }`,
   ];
   return restaurant;
 };
@@ -35,7 +36,7 @@ module.exports.placesRequest = (request, response, client) => {
         location: location,
         radius: 1500,
         type: "restaurant",
-        key: "AIzaSyDL1XisRIMjgHtU8tY76Q-Cop5O8_uDdd0", //functions.config().google.key,
+        key: "AIzaSyDL1XisRIMjgHtU8tY76Q-Cop5O8_uDdd0" // functions.config().google.key,
       },
       timeout: 1000,
     })
