@@ -75,7 +75,7 @@ export const MapScreen = ({ navigation }) => {
           latitude: 0,
           longitude: 0,
           latitudeDelta: 0,
-          longitudeDelta: 0.01,
+          longitudeDelta: 5,
         }}
       />
     );

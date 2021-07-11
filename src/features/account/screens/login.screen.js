@@ -65,6 +65,7 @@ export const LoginScreen = ({ navigation }) => {
           )}
         </Spacer>
       </AccountContainer>
+      {/* <AuthButton mode="contained" onPress={() => navigation.goBack()}>I'm a Bar Owner!</AuthButton> */}
       <Spacer size="large">
         <AuthButton mode="contained" onPress={() => navigation.goBack()}>
           Back

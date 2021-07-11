@@ -35,6 +35,28 @@ export const BrandLogo = styled.Image`
   height: 100px;
 `;
 
+// export const BarOwner = styled.button`
+//   width: 100px;
+//   background-color: #FD5D5D;
+// `;
+
+export const BarOwner = styled(Button).attrs({
+  color: colors.brand.muted,
+})`
+  padding: ${(props) => props.theme.space[2]};
+  padding-left: 20px;
+  padding-right: 20px;
+  color: white;
+  width: auto;
+`;
+
+
+export const TextBar = styled(Text)`
+  /* padding-top: 120px; */
+  font-size: 22px;
+  color: white;
+`;
+
 export const AccountContainer = styled.View`
   background-color: rgba(255, 255, 255, 0.7);
   padding: ${(props) => props.theme.space[4]};
@@ -52,14 +74,14 @@ export const AuthInput = styled(TextInput)`
 `;
 
 export const Title = styled(Text)`
-  padding-top: 120px;
+  padding-top: 160px;
   font-size: 50px;
   color: #fd5d5d;
 `;
 export const TitlePink = styled(Text)`
   font-size: 50px;
   color: #fef851;
-  padding-top: 120px;
+  padding-top: 160px;
   /* primary: "#43D9E8" ,
     secondary: "#5D6CC6",
     muted: "#FD5D5D",
@@ -75,7 +97,7 @@ export const AreYouReady = styled(Text)`
 export const WelcomeTo = styled(Text)`
   font-size: 35px;
   position: absolute;
-  top: 80px;
+  top: 70px;
   z-index: 3;
   /* padding-top: 80px; */
   /* flex: 0.1; */

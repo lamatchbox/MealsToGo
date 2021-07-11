@@ -13,10 +13,11 @@ import {
   TitlePink,
   AnimationWrapper,
   LogoContainer,
-  WelcomeTo
+  WelcomeTo,
+  BarOwner,
+  TextBar
 } from "../components/account.styles";
 import { colors } from "../../../infrastructure/theme/colors";
-
 
 export const AccountScreen = ({ navigation }) => {
   return (
@@ -34,9 +35,9 @@ export const AccountScreen = ({ navigation }) => {
         />
       </AnimationWrapper>
       <LogoContainer>
-      <TitlePink>Shotz</TitlePink>
-      {/* <BrandLogo source={require("../../../../assets/logo.png")}></BrandLogo>  */}
-      <Title> On Me!</Title>
+        <TitlePink>Shotz</TitlePink>
+        {/* <BrandLogo source={require("../../../../assets/logo.png")}></BrandLogo>  */}
+        <Title> On Me!</Title>
       </LogoContainer>
       <AreYouReady>Are You Ready For Free Shotz?</AreYouReady>
       <AccountContainer>
@@ -57,6 +58,11 @@ export const AccountScreen = ({ navigation }) => {
           </AuthButton>
         </Spacer>
       </AccountContainer>
+      <Spacer size="large">
+        <BarOwner mode="contained" onPress={() => navigation.navigate("Bar")}>
+          <TextBar>I'm a Bar Owner!</TextBar>
+        </BarOwner>
+      </Spacer>
     </AccountBackground>
   );
 };

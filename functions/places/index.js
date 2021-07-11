@@ -36,7 +36,7 @@ module.exports.placesRequest = (request, response, client) => {
         location: location,
         radius: 1500,
         type: "restaurant",
-        key: "AIzaSyDL1XisRIMjgHtU8tY76Q-Cop5O8_uDdd0" // functions.config().google.key,
+        key: "AIzaSyDL1XisRIMjgHtU8tY76Q-Cop5O8_uDdd0", // functions.config().google.key,
       },
       timeout: 1000,
     })
