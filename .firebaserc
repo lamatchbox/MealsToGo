@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "mealstogoservers"
+    "default": "take-a-shot-719e2",
+    "shotzonmeFirebase": "take-a-shot-719e2"
   }
 }

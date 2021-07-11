@@ -13,7 +13,8 @@ module.exports.geocodeRequest = (request, response, client) => {
     .geocode({
       params: {
         address: city,
-        key: functions.config().google.key,
+        // key: functions.config().google.key,
+        key: "AIzaSyDL1XisRIMjgHtU8tY76Q-Cop5O8_uDdd0"
       },
       timeout: 1000,
     })

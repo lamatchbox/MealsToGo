@@ -34,9 +34,9 @@ export const RestaurantsScreen = ({ navigation }) => {
   const [isToggled, setIsToggled] = useState(false);
   const hasError = !!error || !!locationError;
 
-  useEffect(() => {
-console.log(error, locationError)
-  }, [])
+//   useEffect(() => {
+// console.log(error, locationError)
+//   }, [])
 
   return (
     <SafeArea>
